@@ -1,0 +1,37 @@
+sekarang proyekmu terhubung dengan dua repository Git, karena kamu menggunakan submodule.
+
+Apa Artinya?
+
+1. Repo Utama (BacaPoint)
+    Repository ini ada di: https://github.com/huft-ri2/BacaPoint.git
+    Mengelola seluruh proyek utama.
+    Menyimpan referensi ke submodule, tetapi tidak langsung menyimpan file di dalamnya.
+    
+2. Submodule (BacaPoint---Web-App-Pencatat-Riwayat-Bacaan-dengan-Sistem-Poin)
+    Repository ini ada di: https://github.com/Cycoell/BacaPoint---Web-App-Pencatat-Riwayat-Bacaan-dengan-Sistem-Poin.git
+    Dikelola secara terpisah.
+    Perubahan dalam submodule tidak otomatis masuk ke repo utama. Harus di-push secara terpisah.
+
+3. Cara Mengelola Repo dengan Submodule
+
+🔹 Jika ingin commit perubahan di repo utama saja:
+bash
+    git add .
+    git commit -m "Update di repo utama"
+    git push origin main
+
+🔹 Jika ingin commit perubahan di submodule:
+
+Masuk dulu ke folder submodule:
+bash
+    cd BacaPoint---Web-App-Pencatat-Riwayat-Bacaan-dengan-Sistem-Poin
+    git add .
+    git commit -m "Update di submodule"
+    git push origin main
+
+Lalu kembali ke repo utama:
+bash
+    cd ..
+    git add .
+    git commit -m "Update referensi submodule"
+    git push origin main
