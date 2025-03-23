@@ -17,7 +17,7 @@ Apa Artinya?
 🔹 Jika ingin commit perubahan di repo utama saja:
 bash
     git add .
-    git commit -m "Update di repo utama"
+    git commit -m "huft update ke-1"
     git push origin main
 
 🔹 Jika ingin commit perubahan di submodule:
@@ -26,7 +26,7 @@ Masuk dulu ke folder submodule:
 bash
     cd BacaPoint---Web-App-Pencatat-Riwayat-Bacaan-dengan-Sistem-Poin
     git add .
-    git commit -m "Update di submodule"
+    git commit -m "huft update ke-1"
     git push origin main
 
 Lalu kembali ke repo utama:
