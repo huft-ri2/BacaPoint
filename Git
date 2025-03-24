@@ -1,4 +1,4 @@
-sekarang proyekmu terhubung dengan dua repository Git, karena kamu menggunakan submodule.
+? sekarang proyekmu terhubung dengan dua repository Git, karena kamu menggunakan submodule.
 
 Apa Artinya?
 
@@ -17,21 +17,21 @@ Apa Artinya?
 🔹 Jika ingin commit perubahan di repo utama saja:
 bash
     git add .
-    git commit -m "huft update ke-3"
+    git commit -m "huft update ke-4"
     git push origin main
 
 🔹 Jika ingin commit perubahan di submodule:
 
-Masuk dulu ke folder submodule:
+//TODO: Masuk dulu ke folder submodule:
 bash
     cd BacaPoint---Web-App-Pencatat-Riwayat-Bacaan-dengan-Sistem-Poin
     git add .
-    git commit -m "huft update ke-3"
+    git commit -m "huft update ke-4"
     git push origin main
 
-Lalu kembali ke repo utama:
+//TODO: Lalu kembali ke repo utama:
 bash
     cd ..
     git add .
-    git commit -m "huft update ke-3"
+    git commit -m "huft update ke-4"
     git push origin main
